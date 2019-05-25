@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cashier</string>
+    <string name="intentCombos">Combos</string>
+    <string name="intentFoods">Foods</string>
+    <string name="intentBeverages">Beverages</string>
+    <string name="intentDeserts">Deserts.</string>
+</resources>
