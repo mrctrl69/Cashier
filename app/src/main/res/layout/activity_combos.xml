@@ -1,279 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout3"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="25dp"
-    tools:context=".CombosActivity">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/constraintLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@mipmap/bg"
+android:orientation="vertical"
+android:padding="25dp"
+tools:context=".activity_combos">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/food_view4"
-        android:layout_width="110dp"
-        android:layout_height="140dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:cardCornerRadius="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73">
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:fontFamily="@font/thebrownies"
+    android:text="Deserts"
+    android:textColor="@color/colorAccent"
+    android:textSize="26sp"
+    app:layout_constraintBottom_toTopOf="@+id/food_view2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+<TextView
+    android:id="@+id/textView5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="8dp"
+    android:fontFamily="@font/thebrownies"
+    android:text="Beverages"
+    android:textColor="@color/colorAccent"
+    android:textSize="26sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.801"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/food_view3" />
 
-            <TextView
-                android:id="@+id/justChickenView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="116dp"
-                android:layout_marginEnd="26dp"
-                android:layout_marginBottom="5dp"
-                android:text="Just Mizqueen"
-                android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.666" />
-        </android.support.constraint.ConstraintLayout>
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="44dp"
+    android:layout_height="30dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="8dp"
+    android:fontFamily="@font/thebrownies"
+    android:text="Foods"
+    android:textAlignment="center"
+    android:textColor="@color/colorAccent"
+    android:textSize="26sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.219"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/food_view1" />
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+<TextView
+    android:id="@+id/textView6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/thebrownies"
+    android:text="Combos"
+    android:textAlignment="center"
+    android:textColor="@color/colorAccent"
+    android:textSize="26sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/food_viewBig" />
 
-            <ImageView
-                android:id="@+id/foodView4"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:layout_marginBottom="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/maxresdefault" />
-        </android.support.constraint.ConstraintLayout>
+<android.support.v7.widget.CardView
+    android:id="@+id/food_view1"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.18"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.63">
 
-    </android.support.v7.widget.CardView>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/food_view3"
-        android:layout_width="110dp"
-        android:layout_height="140dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="8dp"
-        app:cardCornerRadius="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.732">
+        <ImageView
+            android:id="@+id/foodsView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="showIntentFoods"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/maxresdefault" />
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+    </android.support.constraint.ConstraintLayout>
 
-                <TextView
-                    android:id="@+id/maybeChickenView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginTop="116dp"
-                    android:layout_marginEnd="26dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="Maybe Mizqueen"
-                    android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.666" />
-            </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
 
-            <ImageView
-                android:id="@+id/foodView6"
-                android:layout_width="111dp"
-                android:layout_height="110dp"
-                android:layout_marginBottom="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/maxresdefault" />
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+<android.support.v7.widget.CardView
+    android:id="@+id/food_view3"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.8"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.63">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/food_view2"
-        android:layout_width="110dp"
-        android:layout_height="140dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:cardCornerRadius="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.732">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/beveragesVies"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="showIntentBeverages"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
 
-                <TextView
-                    android:id="@+id/anotherChickenView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginTop="116dp"
-                    android:layout_marginEnd="26dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="Another Mizqueen"
-                    android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.333" />
-            </android.support.constraint.ConstraintLayout>
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/maxresdefault" />
 
-            <ImageView
-                android:id="@+id/foodView5"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:layout_marginBottom="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/maxresdefault" />
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+    </android.support.constraint.ConstraintLayout>
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/food_viewBig"
-        android:layout_width="352dp"
-        android:layout_height="276dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="400dp"
-        app:cardCornerRadius="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+</android.support.v7.widget.CardView>
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent">
+<android.support.v7.widget.CardView
+    android:id="@+id/food_view2"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0">
 
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="86dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="250dp"
-                android:layout_marginEnd="287dp"
-                android:layout_marginBottom="24dp"
-                android:text="Choose"
-                android:textAlignment="center"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.413"
-                android:background="@drawable/ic_button_style"/>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="86dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="148dp"
-                android:layout_marginTop="228dp"
-                android:layout_marginEnd="16dp"
-                android:text="Back"
-                android:textAlignment="center"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button5"
-                app:layout_constraintTop_toTopOf="parent"
-                android:background="@drawable/ic_button_style"/>
-        </android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/desertsView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
 
-        <android.support.constraint.ConstraintLayout
-            android:id="@+id/constraintLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:onClick="showIntentDesert"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/maxresdefault" />
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="89dp"
-                android:layout_height="37dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="228dp"
-                android:layout_marginBottom="178dp"
-                android:text="For Misqueen only"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.296"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="Combo Mizqueen"
-                android:textSize="24dp"
-                app:layout_constraintBottom_toTopOf="@+id/textView4"
+<android.support.v7.widget.CardView
+    android:id="@+id/food_viewBig"
+    android:layout_width="334dp"
+    android:layout_height="171dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/foodViewBig2"
-                android:layout_width="253dp"
-                android:layout_height="232dp"
-                android:layout_marginStart="136dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/maxresdefault" />
-
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+    <ImageButton
+        android:id="@+id/comboView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/maxresdefault"
+        android:onClick="showIntentFoods"/>
+</android.support.v7.widget.CardView>
 
 </android.support.constraint.ConstraintLayout>

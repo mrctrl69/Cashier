@@ -13,27 +13,27 @@ import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 
 public class MainActivity extends AppCompatActivity {
 
+    ImageView nn;
+    ImageButton mm;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
-    public void openCombosMenu() {
-        Intent intent =  new Intent(this, CombosActivity.class);
-        startActivity(intent);
-    }
-
-    public void openBeveragesMenu() {
-        Intent intent =  new Intent(this, BeveragesActivity.class);
-        startActivity(intent);
+        mm = findViewById(R.id.comboView);
+        nn = findViewById(R.id.foodsView);
     }
 
     public void showIntentCombos(View view) {
         displayToast(getString(R.string.intentCombos));
+
     }
 
     public void showIntentFoods(View view) {
+        Intent impl = new Intent(MainActivity.this,ComboActivity.class);
+        startActivity(impl);
+
         displayToast(getString(R.string.intentFoods));
     }
 
@@ -45,9 +45,6 @@ public class MainActivity extends AppCompatActivity {
         displayToast(getString(R.string.intentDeserts));
     }
 
-    public void displayToast(String message) {
-        Toast.makeText(getApplicationContext(), message,
-                Toast.LENGTH_SHORT).show();
-    }
+    public void displayToast(String message) { Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show(); }
 
 }
