@@ -13,21 +13,10 @@ import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 
 public class DesertsActivity extends AppCompatActivity {
 
-    private ImageView combos;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deserts);
-
-
-        combos = findViewById(R.id.comboView1);
-        combos.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                openBeveragesMenu();
-            }
-        });
     }
 
     public void openCombosMenu() {
