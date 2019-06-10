@@ -7,7 +7,7 @@
     android:background="@mipmap/bg">
 
     <Button
-        android:id="@+id/btnAddFood1"
+        android:id="@+id/btnAddCombo2"
         android:layout_width="88dp"
         android:layout_height="30dp"
         android:layout_marginEnd="50dp"
@@ -21,7 +21,7 @@
         android:onClick="showIntentMain"/>
 
     <Button
-        android:id="@+id/btnOkFood1"
+        android:id="@+id/btnOkCombo2"
         android:layout_width="88dp"
         android:layout_height="30dp"
 
@@ -34,7 +34,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnBackFood1"
+        android:id="@+id/btnBackCombo2"
         android:layout_width="88dp"
         android:layout_height="30dp"
         android:layout_marginStart="8dp"
@@ -47,10 +47,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="showIntentFoods"/>
+        android:onClick="showIntentCombos"/>
 
     <Button
-        android:id="@+id/btnCheckoutFood1"
+        android:id="@+id/btnCheckoutCombo2"
         android:layout_width="88dp"
         android:layout_height="30dp"
         android:layout_marginStart="8dp"
@@ -93,7 +93,7 @@
             android:layout_marginStart="168dp"
             android:layout_marginEnd="175dp"
             android:fontFamily="@font/thebrownies"
-            android:text="Hey, this is chicken"
+            android:text="This combo is only available for mizqueen ppl"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
             android:textSize="16sp"
@@ -110,7 +110,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/croissantone"
-            android:text="Chicken"
+            android:text="Mizqueen 2"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="36sp"
@@ -148,7 +148,7 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/maxresdefault" />
+                app:srcCompat="@mipmap/combo2" />
         </android.support.constraint.ConstraintLayout>
 
     </android.support.v7.widget.CardView>

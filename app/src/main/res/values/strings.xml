@@ -1,7 +1,20 @@
 <resources>
     <string name="app_name">Cashier</string>
+    <string name="intentMain">Combos</string>
     <string name="intentCombos">Combos</string>
+    <string name="intentCombo1">Combo1</string>
+    <string name="intentCombo2">Combo2</string>
+    <string name="intentCombo3">Combo3</string>
     <string name="intentFoods">Foods</string>
-    <string name="intentBeverages">Beverages</string>
-    <string name="intentDeserts">Deserts.</string>
+    <string name="intentFood1">Food1</string>
+    <string name="intentFood2">Food2</string>
+    <string name="intentFood3">Food3</string>
+    <string name="intentBeverage">Beverages</string>
+    <string name="intentBeverage1">Beverage1</string>
+    <string name="intentBeverage2">Beverage2</string>
+    <string name="intentBeverage3">Beverage3</string>
+    <string name="intentDeserts">Deserts</string>
+    <string name="intentDesert1">Deserts1</string>
+    <string name="intentDesert2">Deserts2</string>
+    <string name="intentDesert3">Deserts3</string>
 </resources>

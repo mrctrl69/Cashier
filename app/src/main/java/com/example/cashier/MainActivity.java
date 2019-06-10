@@ -25,26 +25,29 @@ public class MainActivity extends AppCompatActivity {
         nn = findViewById(R.id.foodsView);
     }
 
-    public void showIntentCombos(View view) {
-        displayToast(getString(R.string.intentCombos));
+    public void showIntentCombo(View view) {
+        Intent impl = new Intent(MainActivity.this,ComboActivity.class);
+        startActivity(impl);
 
+        displayToast(getString(R.string.intentCombos));
     }
 
     public void showIntentFoods(View view) {
-        Intent impl = new Intent(MainActivity.this,ComboActivity.class);
+        Intent impl = new Intent(MainActivity.this,FoodsActivity.class);
         startActivity(impl);
 
         displayToast(getString(R.string.intentFoods));
     }
 
-    public void showIntentBeverages(View view) {
-        displayToast(getString(R.string.intentBeverages));
-    }
+    public void showIntentDeserts(View view) {
+        Intent impl = new Intent(MainActivity.this,DesertsActivty.class);
+        startActivity(impl);
 
-    public void showIntentDesert(View view) {
         displayToast(getString(R.string.intentDeserts));
     }
 
-    public void displayToast(String message) { Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show(); }
+    public void displayToast(String message) {
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+    }
 
 }

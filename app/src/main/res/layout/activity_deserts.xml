@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="25dp"
-    tools:context=".FoodsActivity"
+    tools:context=".DesertsActivty"
     android:background="@mipmap/bg">
 
     <android.support.v7.widget.CardView
@@ -40,7 +40,7 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/croissantone"
-                        android:text="Chicken"
+                        android:text="Desert"
                         android:textColor="@color/colorAccent"
                         android:textSize="24dp" />
 
@@ -51,7 +51,7 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/thebrownies"
-                        android:text="This is chicken, wheer yopu can eat chicken and taste chicken"
+                        android:text="This is desert, sweet and delicious"
                         android:textColor="@color/colorAccent" />
                 </LinearLayout>
 
@@ -65,7 +65,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@mipmap/maxresdefault" />
+                        app:srcCompat="@mipmap/desert" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -76,20 +76,20 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnChooseFood"
+                    android:id="@+id/btnChooseDesert"
                     android:layout_width="86dp"
                     android:layout_height="40dp"
                     android:layout_alignParentStart="true"
                     android:layout_margin="5dp"
                     android:background="@drawable/ic_button_style"
-                    android:onClick="showIntentFood1"
+                    android:onClick="showIntentDesert1"
                     android:text="Choose"
                     android:textAlignment="center"
                     android:typeface="monospace" />
 
 
                 <Button
-                    android:id="@+id/btnBackFood"
+                    android:id="@+id/btnBackDesert"
                     android:layout_width="86dp"
                     android:layout_height="40dp"
                     android:layout_alignParentEnd="true"
@@ -99,7 +99,7 @@
                     android:text="Back"
                     android:textAlignment="center"
                     android:typeface="monospace"
-                    android:onClick="showIntentFoods"/>
+                    android:onClick="showIntentDeserts"/>
             </RelativeLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -130,14 +130,14 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/justChickenView"
+                        android:id="@+id/justDesertView"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="100dp"
                         android:layout_marginEnd="14dp"
                         android:fontFamily="@font/croissantone"
-                        android:text="Just Chicken"
+                        android:text="Just Desert"
                         android:textAlignment="center"
                         android:textColor="@color/colorAccent"
                         android:textSize="12sp"
@@ -156,12 +156,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_marginBottom="30dp"
+                        android:onClick="showIntentDesert2"
+                        android:scaleType="fitXY"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@mipmap/food"
-                        android:onClick="showIntentFood2"/>
+                        app:srcCompat="@mipmap/desert2" />
                 </android.support.constraint.ConstraintLayout>
 
             </android.support.v7.widget.CardView>
@@ -195,22 +196,23 @@
                             android:id="@+id/foodView6"
                             android:layout_width="111dp"
                             android:layout_height="110dp"
-                            android:onClick="showIntentFood3"
-                            app:layout_constraintBottom_toTopOf="@+id/maybeChickenView"
+                            android:onClick="showIntentDesert3"
+                            android:scaleType="fitXY"
+                            app:layout_constraintBottom_toTopOf="@+id/maybeDesertView"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@mipmap/food2" />
+                            app:srcCompat="@mipmap/desert3" />
 
                         <TextView
-                            android:id="@+id/maybeChickenView"
+                            android:id="@+id/maybeDesertView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="7dp"
                             android:layout_marginTop="100dp"
                             android:layout_marginEnd="6dp"
                             android:fontFamily="@font/croissantone"
-                            android:text="Maybe Chicken"
+                            android:text="Maybe Desert"
                             android:textAlignment="center"
                             android:textColor="@color/colorAccent"
                             android:textSize="12sp"
@@ -249,14 +251,14 @@
                         android:layout_height="match_parent">
 
                         <TextView
-                            android:id="@+id/anotherChickenView"
+                            android:id="@+id/anotherDesertView"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:layout_marginTop="100dp"
                             android:layout_marginEnd="6dp"
                             android:fontFamily="@font/croissantone"
-                            android:text="Another Chicken"
+                            android:text="Another Desert"
                             android:textAlignment="center"
                             android:textColor="@color/colorAccent"
                             android:textSize="11sp"
@@ -271,12 +273,13 @@
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_marginBottom="30dp"
+                        android:onClick="showIntentDesert4"
+                        android:scaleType="fitXY"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@mipmap/food3"
-                        android:onClick="showIntentFood4"/>
+                        app:srcCompat="@mipmap/desert4" />
                 </android.support.constraint.ConstraintLayout>
             </android.support.v7.widget.CardView>
         </LinearLayout>
