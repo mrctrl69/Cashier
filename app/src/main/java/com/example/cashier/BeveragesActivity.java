@@ -15,10 +15,17 @@ public class BeveragesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_combo);
+        setContentView(R.layout.activity_beverages);
 
         btnChoose = findViewById(R.id.btnChooseBeverage);
         btnBack = findViewById(R.id.btnBackBeverage);
+    }
+
+    public void showIntentMain(View view) {
+        Intent impl = new Intent(BeveragesActivity.this,MainActivity.class);
+        startActivity(impl);
+
+        displayToast("Beverages");
     }
 
     public void showIntentBeverage1(View view) {
@@ -47,13 +54,6 @@ public class BeveragesActivity extends AppCompatActivity {
         startActivity(impl);
 
         displayToast("Beverage 4");
-    }
-
-    public void showIntentBeverage(View view) {
-        Intent impl = new Intent(BeveragesActivity.this,MainActivity.class);
-        startActivity(impl);
-
-        displayToast("Beverage");
     }
 
     public void displayToast(String message) {

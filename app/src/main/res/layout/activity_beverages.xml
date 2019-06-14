@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="25dp"
-    tools:context=".ComboActivity"
+    tools:context=".BeveragesActivity"
     android:background="@mipmap/bg">
 
     <android.support.v7.widget.CardView
@@ -85,7 +85,7 @@
                     android:text="Choose"
                     android:textAlignment="center"
                     android:typeface="monospace"
-                    android:onClick="showIntentCombo1"/>
+                    android:onClick="showIntentBeverage1"/>
 
 
                 <Button
@@ -100,7 +100,7 @@
                     android:text="Back"
                     android:textAlignment="center"
                     android:typeface="monospace"
-                    android:onClick="showIntentCombo"/>
+                    android:onClick="showIntentMain"/>
             </RelativeLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -163,7 +163,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@mipmap/beverage2"
 
-                        android:onClick="showIntentCombo2"/>
+                        android:onClick="showIntentBeverage2"/>
                 </android.support.constraint.ConstraintLayout>
 
             </android.support.v7.widget.CardView>
@@ -221,7 +221,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@mipmap/beverage3"
-                        android:onClick="showIntentCombo3"/>
+                        android:onClick="showIntentBeverage3"/>
                 </android.support.constraint.ConstraintLayout>
             </android.support.v7.widget.CardView>
 
@@ -278,7 +278,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@mipmap/beverage4"
-                        android:onClick="showIntentCombo4" />
+                        android:onClick="showIntentBeverage4" />
                 </android.support.constraint.ConstraintLayout>
             </android.support.v7.widget.CardView>
         </LinearLayout>
