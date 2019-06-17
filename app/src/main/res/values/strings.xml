@@ -17,4 +17,12 @@
     <string name="intentDesert1">Deserts1</string>
     <string name="intentDesert2">Deserts2</string>
     <string name="intentDesert3">Deserts3</string>
+    <string name="app_name1">LoginRegisterScreenDesign</string>
+    <string name="create_account"><font color="#00ff00">text</font></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="back_to_login">Back to Login</string>
 </resources>
