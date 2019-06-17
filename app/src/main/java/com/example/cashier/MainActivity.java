@@ -46,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
         displayToast(getString(R.string.intentDeserts));
     }
 
+    public void showIntentBeverage(View view) {
+        Intent impl = new Intent(MainActivity.this,BeveragesActivity.class);
+        startActivity(impl);
+
+        displayToast(getString(R.string.intentBeverage));
+    }
+
     public void displayToast(String message) {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
