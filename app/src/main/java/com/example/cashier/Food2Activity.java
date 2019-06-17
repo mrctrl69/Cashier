@@ -21,7 +21,6 @@ public class Food2Activity extends AppCompatActivity {
 
         addAnother = findViewById(R.id.btnAddFood2);
         back = findViewById(R.id.btnBackFood2);
-        checkout = findViewById(R.id.btnCheckoutFood2);
         ok = findViewById(R.id.btnOkFood2);
     }
 

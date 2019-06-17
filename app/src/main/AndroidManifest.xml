@@ -9,17 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".User"></activity>-->
-                <activity android:name=".RegisterActivity"
+        <activity android:name=".ThankyouActivity"></activity>
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".User" />
+        <activity
+            android:name=".RegisterActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".LoginActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <action android:name="android.intent.action.VIEW" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".Beverage1Activity" />
+        <activity android:name=".Beverage2Activity" />
+        <activity android:name=".Beverage3Activity" />
+        <activity android:name=".Beverage4Activity" />
+        <activity android:name=".BeveragesActivity" />
         <activity android:name=".Desert4Activity" />
         <activity android:name=".Desert3Activity" />
         <activity android:name=".Desert2Activity" />
@@ -35,10 +44,10 @@
         <activity android:name=".Food1Activity" />
         <activity android:name=".FoodsActivity" />
         <activity android:name=".ComboActivity" />
-              <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
             android:label="Home Screen"
             android:theme="@style/AppTheme.NoActionBar" />
-        </activity>
     </application>
 
 </manifest>

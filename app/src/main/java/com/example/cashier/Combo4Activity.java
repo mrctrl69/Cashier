@@ -21,7 +21,6 @@ public class Combo4Activity extends AppCompatActivity {
 
         addAnother = findViewById(R.id.btnAddCombo4);
         back = findViewById(R.id.btnBackCombo4);
-        checkout = findViewById(R.id.btnCheckoutCombo4);
         ok = findViewById(R.id.btnOkCombo4);
     }
 

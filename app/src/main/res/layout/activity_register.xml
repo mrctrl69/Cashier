@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorPrimary"
+    android:background="@mipmap/bg"
     android:fitsSystemWindows="true"
     tools:context=".RegisterActivity">
 
@@ -16,13 +16,15 @@
         android:layout_marginRight="16dp"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:src="@drawable/usericon" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/croissantone"
+            android:text="McFC"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="69sp" />
 
         <android.support.design.widget.TextInputLayout
             app:errorEnabled="true"
@@ -35,6 +37,7 @@
                 android:id="@+id/editTextUserName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="monospace"
                 android:hint="@string/username"
                 android:inputType="textPersonName" />
         </android.support.design.widget.TextInputLayout>
@@ -50,6 +53,7 @@
                 android:id="@+id/editTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="monospace"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress" />
         </android.support.design.widget.TextInputLayout>
@@ -67,6 +71,7 @@
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="cursive"
                 android:hint="@string/password"
                 android:inputType="textPassword" />
         </android.support.design.widget.TextInputLayout>
@@ -75,12 +80,14 @@
             android:id="@+id/buttonRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:background="@color/colorAccent"
-            android:text="@string/register" />
+            android:backgroundTint="@color/colorPrimarySecond"
+            android:fontFamily="monospace"
+            android:text="@string/register"
+            android:textColor="@android:color/white" />
 
         <TextView
             android:id="@+id/textViewLogin"
@@ -91,5 +98,6 @@
             android:gravity="center"
             android:text="@string/back_to_login"
             android:textColor="@android:color/white" />
+
     </LinearLayout>
 </ScrollView>

@@ -21,7 +21,6 @@ public class Desert1Activity extends AppCompatActivity {
 
         addAnother = findViewById(R.id.btnAddDesert1);
         back = findViewById(R.id.btnBackDesert1);
-        checkout = findViewById(R.id.btnCheckoutDesert1);
         ok = findViewById(R.id.btnOkDesert1);
     }
 

@@ -21,7 +21,6 @@ public class Beverage4Activity extends AppCompatActivity {
 
         addAnother = findViewById(R.id.btnAddBeverage4);
         back = findViewById(R.id.btnBackBeverage4);
-        checkout = findViewById(R.id.btnCheckoutBeverage4);
         ok = findViewById(R.id.btnOkBeverage4);
     }
 

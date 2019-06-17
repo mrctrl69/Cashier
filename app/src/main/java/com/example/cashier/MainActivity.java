@@ -53,8 +53,20 @@ public class MainActivity extends AppCompatActivity {
         displayToast(getString(R.string.intentBeverage));
     }
 
+    public void showCheckout(View view) {
+        Intent impl = new Intent(MainActivity.this,CheckoutActivity.class);
+        startActivity(impl);
+
+        displayToast("Cart");
+    }
+
     public void displayToast(String message) {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 
+    public void logOut(View view) {
+        Intent logOut = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(logOut);
+        finish();
+    }
 }
